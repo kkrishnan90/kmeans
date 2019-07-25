@@ -8,7 +8,6 @@ with open(os.path.join(HERE, 'README.rst')) as readme_file:
 C_KMEANS = Extension(
     'kmeans/lib',
     sources=['kmeans/lib.c'],
-    extra_compile_args=["-std=c++11", "-Wall", "-Wextra"]
 )
 
 # The packaging is a little wonky.  I've been fighting with tox to try to
